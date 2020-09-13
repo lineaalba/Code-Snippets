@@ -1,0 +1,22 @@
+<h3 class="headings">Snippet List</h3>
+
+<table class="table">
+    <tbody>
+        {{#if viewData.snippets}}
+        {{#each viewData.snippets}}
+        <tr>
+            <td>
+                <p class="p">Created by: {{this.author}}</p><pre><code>{{this.snippet}}</code></pre>
+            </td>
+             <td>
+                <a href="/snippets/{{this.id}}/edit"><span class="edit">Edit</span></a>
+            </td>
+        {{/each}}
+        {{else}}
+            <td>
+                There are no snippets to display.
+            </td>
+            </tr>
+        {{/if}}
+    </tbody>
+</table>

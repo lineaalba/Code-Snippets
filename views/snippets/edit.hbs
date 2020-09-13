@@ -1,0 +1,11 @@
+
+<h3 class="headings">Edit your snippet</h3>
+
+<form method="post" action="/snippets/{{viewData.snippet.id}}/update">
+  <input type="hidden" name="id" value="{{viewData.snippet.id}}"/>
+  <textarea class="snippetarea" name="snippet" required="required" autofocus="autofocus">{{viewData.snippet.snippet}}</textarea>
+  <br>
+  <button type="submit" class="btn">Update Snippet</button>
+</form>
+
+<a href="/snippets/{{viewData.snippet.id}}/remove"><span class="delete">Delete this snippet</span></a>

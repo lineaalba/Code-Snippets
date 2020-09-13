@@ -1,0 +1,16 @@
+<header>
+    <div class="navbar">
+         {{#if username}}
+        <br>
+        <a href="/snippets/">View Code Snippets</a>
+        <a href="/snippets/new">Write Code Snippets</a>
+        <a href="/accounts/login">Logout</a>
+        <p>Logged in as: {{username}}</p>
+        {{else}}
+        <a href="/snippets/">View Code Snippets</a>
+        <a href="/snippets/new">Write Code Snippets</a>
+        <a href="/accounts/login">Login</a>
+        <a href="/accounts/register">Register</a>
+        {{/if}}
+    </div>
+</header>
